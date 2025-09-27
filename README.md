@@ -69,4 +69,4 @@ Finalmente, la aplicación generará datos de un gasto de manera aleatoria y hab
   
   ~~- ⚠️ **<u><em>Importante</em></u>**: Una vez descomentes las líneas indicadas en la introducción, el programa empezará a generar un gasto con datos aleatorios cada 5 segundos y llamará a la función `procesarGasto()` pasandole el gasto en formato json como parámetro.~~
   
-  ~~- Para cada gasto aleatorio que recibas crea un objeto `GastoCombustible`, y en función del año en que se realizó ese gasto, recupera del `sessionStorage` el gasto total de ese año, súmale el precio de ese año y actualízalo en el `sessionStorage`. ~~
+  ~~- Para cada gasto aleatorio que recibas crea un objeto `GastoCombustible`, y en función del año en que se realizó ese gasto, recupera del `sessionStorage` el gasto total de ese año, súmale el precio de ese año y actualízalo en el `sessionStorage`.~~
