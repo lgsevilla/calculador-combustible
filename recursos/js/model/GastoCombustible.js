@@ -6,6 +6,6 @@ export class GastoCombustible {
         this.vehicleType = String(vehicleType);
         this.date = new Date(date);
         this.kilometers = parseFloat(kilometers);
-        this.precioViaje = parseFlaot(precioViaje);
+        this.precioViaje = parseFloat(precioViaje);
     }
 }

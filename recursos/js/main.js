@@ -1,8 +1,8 @@
+"use strict";
 console.log("Fichero main.js cargado correctamente");
 
-
-
-
+import { GastoService } from "./service/gasto.service.js";
+GastoService.almacenarGastos();
 
 
 
