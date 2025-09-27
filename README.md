@@ -5,7 +5,7 @@
 
 ### 📝 Descripción general
 
-Se desarrollará una aplicación web para calcular los costos de combustible de una empresa de reparto. Inicialmente se cargará una lista de datos en formato JSON en el `LocalStorage`con un histórico de gastos en los viajes realizados por diferentes vehículos entre 2015 y 2020, además se almacenará en el `SessioStorage` una lista con la suma de los gastos de cada año. 
+Se desarrollará una aplicación web para calcular los costos de combustible de una empresa de reparto. Inicialmente se cargará una lista de datos en formato JSON en el `LocalStorage`con un histórico de gastos en los viajes realizados por diferentes vehículos entre 2015 y 2020, además se almacenará en el `SessionStorage` una lista con la suma de los gastos de cada año. 
 
 Finalmente, la aplicación generará datos de un gasto de manera aleatoria y habrá que sumar el precio del gasto en el `SessionStorage`, en función del año al que corresponda ese gasto.
 
@@ -25,13 +25,13 @@ Finalmente, la aplicación generará datos de un gasto de manera aleatoria y hab
 
 #### Ejercicio 1: Arquitectura
 
-- Crear una estructura de directorios basada en el patrón MVVM, e incluye los ficheros adjuntos en los directorios que les corresponda
+- ~~Crear una estructura de directorios basada en el patrón MVVM, e incluye los ficheros adjuntos en los directorios que les corresponda~~
 
-- Enlaza el archivo `main.js` para que se ejecute cuando arranque la aplicación
+- ~~Enlaza el archivo `main.js` para que se ejecute cuando arranque la aplicación~~
 
-- Enlaza en archivo `style.css`para que se carguen los estilos cuando arranque la aplicación
+- ~~Enlaza en archivo `style.css`para que se carguen los estilos cuando arranque la aplicación~~
 
-- Separa las responsabilidades de la aplicación en diferentes directorios y respeta el flujo de llamadas: **main-service-data-model**  
+- ~~Separa las responsabilidades de la aplicación en diferentes directorios y respeta el flujo de llamadas: **main-service-data-model**~~  
 
 #### Ejercicio 2: Acceso a Datos.
 
