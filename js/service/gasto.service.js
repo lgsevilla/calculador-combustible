@@ -3,6 +3,7 @@
 import { GastoCombustible } from "../model/GastoCombustible.js";
 import { GASTOS_DB } from "../data/gasto.data.js";
 
+// gastoAnual es un object con key-value pairs (en Python es un dictionary)
 var gastoAnual = {
   2020 : 0,
   2019 : 0,
@@ -11,6 +12,7 @@ var gastoAnual = {
   2016 : 0,
   2015 : 0
 };
+
 
 function almacenarGastos() {
   GASTOS_DB.forEach(gasto => {

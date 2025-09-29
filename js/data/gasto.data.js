@@ -2,6 +2,7 @@
 
 import { GastoCombustible } from "../model/GastoCombustible.js";
 
+// Array de objetos tipo JSON
 const historico_db = [
     {"id":1,"vehicleType":"moto","date":"2015-04-04T00:00:00.000Z","kilometers":28,"precioViaje":1.68},
     {"id":2,"vehicleType":"furgoneta","date":"2015-09-18T00:00:00.000Z","kilometers":145,"precioViaje":14.10},
@@ -28,9 +29,27 @@ const historico_db = [
     {"id":18,"vehicleType":"moto","date":"2020-12-04T00:00:00.000Z","kilometers":34,"precioViaje":2.04}
 ];
 
+// El metodo map hace un loop sobre cada elemento de historico_db, por cada JSON object, se crea un nuevo objeto
+// ahora de tipo GastoCombustible. Los nuevos objetos se guardan en un nuevo array, GASTOS_DB 
 export const GASTOS_DB = historico_db.map(
     fila => new GastoCombustible(fila.id, fila.vehicleType, fila.date, fila.kilometers, fila.precioViaje)
 );
 
+/* 
+Version for, en lugar de usar el metodo map:
 
+const GASTO_DB = [];
+
+for (let i = 0; i < historico_db.length; i++) {
+    const fila = historico_db[i];
+    const gasto = new GastoCombustible(
+        fila.id,
+        fila.vehicleType,
+        fila.date,
+        fila.kilometers,
+        fila.precioViaje
+    );
+    GASTOS_DB.push(gasto);
+}
+*/
 
