@@ -25,48 +25,48 @@ Finalmente, la aplicación generará datos de un gasto de manera aleatoria y hab
 
 #### Ejercicio 1: Arquitectura
 
-- ~~Crear una estructura de directorios basada en el patrón MVVM, e incluye los ficheros adjuntos en los directorios que les corresponda~~
+- Crear una estructura de directorios basada en el patrón MVVM, e incluye los ficheros adjuntos en los directorios que les corresponda
 
-- ~~Enlaza el archivo `main.js` para que se ejecute cuando arranque la aplicación~~
+- Enlaza el archivo `main.js` para que se ejecute cuando arranque la aplicación
 
-- ~~Enlaza en archivo `style.css`para que se carguen los estilos cuando arranque la aplicación~~
+- Enlaza en archivo `style.css`para que se carguen los estilos cuando arranque la aplicación
 
-- ~~Separa las responsabilidades de la aplicación en diferentes directorios y respeta el flujo de llamadas: **main-service-data-model**~~  
+- Separa las responsabilidades de la aplicación en diferentes directorios y respeta el flujo de llamadas: **main-service-data-model**
 
 #### Ejercicio 2: Acceso a Datos.
 
-~~- Crea el modelo de datos GastoCombustible en el directorio correspondiente. Este tiene qu8e tener siguientes atributos:~~
+- Crea el modelo de datos GastoCombustible en el directorio correspondiente. Este tiene qu8e tener siguientes atributos:
   
-  - ~~id - int~~
+  - id - int
   
-  - ~~vehicleType - string~~
+  - vehicleType - string
   
-  - ~~date - Date~~
+  - date - Date
   
-  - ~~kilometers - float~~
+  - kilometers - float
   
-  - ~~precioViaje - float~~
+  - precioViaje - float
 
-- ~~En el archivo `gasto.data.js`~~
+- En el archivo `gasto.data.js`
   
-  - ~~Copia y pega los registros del archivo `historicoGastos.json` en la constante `historico_db`para posteriormente leerlos como JSON~~
+  - Copia y pega los registros del archivo `historicoGastos.json` en la constante `historico_db`para posteriormente leerlos como JSON
   
-  - ~~Haciendo uso del modelo de datos, guarda en `GASTOS_DB` un objeto de tipo `GastoCombustible` por cada registro que exista en `historico_db`~~ 
+  - Haciendo uso del modelo de datos, guarda en `GASTOS_DB` un objeto de tipo `GastoCombustible` por cada registro que exista en `historico_db`
 
 #### Ejercicio 3: Servicio
 
-~~En `gasto.service.js` tendrás que programar las siguientes funciones:~~
+En `gasto.service.js` tendrás que programar las siguientes funciones:
 
-~~- `almacenarGastos()`~~
+- `almacenarGastos()`
   
-  ~~- Recorre `GASTOS_DB` y va almacenando cada registro en el `LocalStorage`` . Guarda como clave el ID del gasto y como valor el objeto completo en formato JSON.~~
+  - Recorre `GASTOS_DB` y va almacenando cada registro en el `LocalStorage`` . Guarda como clave el ID del gasto y como valor el objeto completo en formato JSON.
   
-  ~~- Calcula el gasto total para cada año utilizando la variable `gastoAnual` y guárdalo en el `SessionStorage` teniendo en cuenta que la clave tiene que ser el año, y el valor los gastos totales de ese año~~
+  - Calcula el gasto total para cada año utilizando la variable `gastoAnual` y guárdalo en el `SessionStorage` teniendo en cuenta que la clave tiene que ser el año, y el valor los gastos totales de ese año
 
-~~⚠️ **<u><em>Importante</em></u>**: *Cuando exportes la función `almacenarGastos()`, nombra a ese objeto como `GastoService`*~~
+⚠️ **<u><em>Importante</em></u>**: *Cuando exportes la función `almacenarGastos()`, nombra a ese objeto como `GastoService`*
 
-~~- procesarGasto()~~ 
+- procesarGasto()
   
-  ~~- ⚠️ **<u><em>Importante</em></u>**: Una vez descomentes las líneas indicadas en la introducción, el programa empezará a generar un gasto con datos aleatorios cada 5 segundos y llamará a la función `procesarGasto()` pasandole el gasto en formato json como parámetro.~~
+  - ⚠️ **<u><em>Importante</em></u>**: Una vez descomentes las líneas indicadas en la introducción, el programa empezará a generar un gasto con datos aleatorios cada 5 segundos y llamará a la función `procesarGasto()` pasandole el gasto en formato json como parámetro.
   
-  ~~- Para cada gasto aleatorio que recibas crea un objeto `GastoCombustible`, y en función del año en que se realizó ese gasto, recupera del `sessionStorage` el gasto total de ese año, súmale el precio de ese año y actualízalo en el `sessionStorage`.~~
+  - Para cada gasto aleatorio que recibas crea un objeto `GastoCombustible`, y en función del año en que se realizó ese gasto, recupera del `sessionStorage` el gasto total de ese año, súmale el precio de ese año y actualízalo en el `sessionStorage`.
